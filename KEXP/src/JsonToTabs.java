@@ -49,7 +49,7 @@ public class JsonToTabs {
 				continue;
 			}
 			StringBuilder outputSb = new StringBuilder();
-			outputSb.append(tabify((String) jsonData.get("artist"))).  append("\t").
+            outputSb.append(tabify((String) jsonData.get("artist"))).  append("\t").
 			         append(tabify((String) jsonData.get("track"))).   append("\t").
 			         append(tabify((String) jsonData.get("album"))).   append("\t").
 			         append(tabify((String) jsonData.get("year"))).    append("\t").
