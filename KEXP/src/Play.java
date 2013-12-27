@@ -9,14 +9,14 @@ public class Play {
     private String dj;
     private String dateTime; // String representation of SQL DateTime
 
-    public String getArtist()      { return artist; }
-    public String getTrack()       { return track; }
-    public String getAlbum()       { return album; }
-    public String getYear()        { return year; }
-    public String getLabel()       { return label; }
+    public String getArtist()      { return artist;   }
+    public String getTrack()       { return track;    }
+    public String getAlbum()       { return album;    }
+    public String getYear()        { return year;     }
+    public String getLabel()       { return label;    }
     public String getShowName()    { return showName; }
-    public String getShowTagline() { return tagline; }
-    public String getDj()          { return dj; }
+    public String getShowTagline() { return tagline;  }
+    public String getDj()          { return dj;       }
 
     public String getDateTime() {
         return dateTime;
@@ -72,11 +72,12 @@ public class Play {
      */
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(artist).append(" - ").append(track).append(" - ")
-                .append(album).append("\n").append(year).append(", ")
-                .append(label).append("\n").append(showName).append("\n")
-                .append(tagline).append("\n").append(dj).append("\n")
-                .append("played at: " + dateTime).append("\n");
+        sb.append(artist).append(" - ").append(track).append(" - ").append(album).append("\n").
+           append(year).append(", ").append(label).append("\n").
+           append(showName).append("\n").
+           append(tagline).append("\n").
+           append(dj).append("\n").
+           append("played at: " + dateTime).append("\n");
         return sb.toString();
     }
 

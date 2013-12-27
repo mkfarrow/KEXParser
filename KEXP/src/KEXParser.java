@@ -73,15 +73,11 @@ public class KEXParser {
 
             for (Element releaseChild : releaseMetadata.children()) {
                 if (releaseChild.hasClass("ReleaseName")) {
-                    releaseName = releaseChild
-                            .getElementsByClass("ReleaseName").first();
+                    releaseName = releaseChild.getElementsByClass("ReleaseName").first();
                 } else if (releaseChild.hasClass("ReleaseAndLabel")) {
-                    Element releaseAndLabel = releaseChild.getElementsByClass(
-                            "ReleaseAndLabel").first();
-                    releaseDate = releaseAndLabel.getElementsByClass(
-                            "ReleaseEventDate").first();
-                    label = releaseAndLabel.getElementsByClass("LabelName")
-                            .first();
+                    Element releaseAndLabel = releaseChild.getElementsByClass("ReleaseAndLabel").first();
+                    releaseDate = releaseAndLabel.getElementsByClass("ReleaseEventDate").first();
+                    label = releaseAndLabel.getElementsByClass("LabelName").first();
                 }
             }
             releaseDate = checkNull(releaseDate);
